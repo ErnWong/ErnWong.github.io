@@ -1,0 +1,19 @@
+<footer class="site-footer">
+
+  <p class="footer-message">
+    {{ site.footer_message | escape }}
+  </p>
+
+  <ul class="social-media-list">
+    <li>
+      <a class="footer-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </li>
+    <li>
+      {% include icon-github.html username=site.github_username %}
+    </li>
+    <li>
+      {% include icon-twitter.html username=site.twitter_username %}
+    </li>
+  </ul>
+
+</footer>
