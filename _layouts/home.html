@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<header class="home-header">
+  <h1>{{ site.title | escape }}</h1>
+</header>
+
+<nav class="home-nav">
+  <ul>
+    <li class="fancynav-left"><a href="{% post_url 2016-12-31-duck-duck-goose %}">Why Ducks?</a></li>
+    <li class="fancynav-left"><a href="{{ "/about/" | relative_url }}">About</a></li>
+    <li class="fancynav-down"><a href="{{ "/#blog" | relative_url }}">Blog</a></li>
+    <li class="fancynav-right"><a href="{{ "/contact/" | relative_url }}">Contact</a></li>
+    <li class="fancynav-right"><a href="{{ "/categories-n-tags/" | relative_url }}">Categories & Tags</a></li>
+  </ul>
+</nav>
+
+<main id="blog">
+  <header class="post-header">
+    <h1>Blog</h1>
+  </header>
+  {% include postlist.html posts=site.posts %}
+  <h2>The End</h2>
+  <a class="rss-subscribe" href="{{ "/feed.xml" | relative_url }}">Subscribe via RSS</a>
+  {% include social-bar.html %}
+</main>

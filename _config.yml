@@ -13,11 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Duck Duck Goose
-tagline: The game never really ended, and hey, you're in.
-title_tooltip: aka just-another-blog-on-the-internet
-footer_message: Made with a pair of hands. © 2016 Ernest Wong.
-email: ewon521@gmail.com
+title: The Duck Pond
+email: "&#x65;&#x77;&#x6f;&#x6e;&#x35;&#x32;&#x31;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;"
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
