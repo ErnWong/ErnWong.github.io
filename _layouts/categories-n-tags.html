@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<nav class="breadcrumb">
+  <ul class="breadcrumb-left">
+    <li><a href="{{ "/" | relative_url }}">Home</a></li>
+    <li><a href="{{ "/#blog" | relative_url }}">Blog</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>Categories</h2>
+
+  <ul class="taglist">
+    {% for tag in site.categories %}
+    <li>
+      <a href="{{ "/posts-by-category" | relative_url }}#{{ tag[0] | sluggify }}">
+        <span class="taglist-name">{{ tag[0] }}</span>
+        <span class="taglist-size">{{ tag[1].size }} post{%if tag[1].size > 1 %}s{% endif %}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Tags</h2>
+
+  <ul class="taglist">
+    {% for tag in site.tags %}
+    <li>
+      <a href="{{ "/posts-by-tag" | relative_url }}#{{ tag[0] | sluggify }}">
+        <span class="taglist-name">{{ tag[0] }}</span>
+        <span class="taglist-size">{{ tag[1].size }} post{%if tag[1].size > 1 %}s{% endif %}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2>The End</h2>
+
+  {% include social-bar.html %}
+</main>

@@ -1,12 +1,54 @@
+@import url("colorscheme.css");
+
 html, body {
-  margin: 0;
+  margin: 1em;
   height: 100%;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  position: relative;
 }
+
+p {
+  margin: 1.4em 0;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+input, textarea {
+  width: 20em;
+  border: 2px solid #333;
+  padding: 0.7em;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  color: #333;
+  margin: 1.4em 0;
+}
+
+button {
+  background: white;
+  border: 2px solid #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  padding: 0.3em 0.5em;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
 
 .post-header {
   text-align: center;
+}
+
+.post-content {
+  margin-top: 4em;
 }
 
 header h1 {
@@ -15,7 +57,29 @@ header h1 {
   font-size: 1.6em;
   text-transform: uppercase;
   padding: 0.3em 1em;
-  border: 2px solid black;
+  border: 2px solid #333;
+}
+
+#home-header {
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  width: 100%;
+}
+#home-header h1 {
+  display: table;
+  background-color: white;
+  margin: 0 auto;
+}
+
+#home-tagline {
+  display: inline-block;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  border: 2px solid #333;
+  padding: 0.3em 0.8em;
 }
 
 h2 {
@@ -24,10 +88,11 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   overflow: hidden;
+  margin: 2.8em 0;
 }
 
 h2:before, h2:after {
-  background-color: black;
+  background-color: #333;
   content: "";
   display: inline-block;
   height: 2px;
@@ -49,31 +114,142 @@ h2:after {
 main {
   width: 50em;
   margin: 0 auto;
+  padding-bottom: 8em;
 }
 
-.post-meta {
-  display: flex;
+.contactform {
+  position: relative;
+  left: 50%;
+  margin-left: -10.7em;
 }
 
-.post-meta * {
-  flex: 1;
+.contactform textarea {
+  display: block;
+  height: 10em;
+}
+.contactform input {
+  display: block;
 }
 
-.post-meta time {
-  text-align: left;
+.home-nav {
+  overflow: hidden;
 }
 
-.post-meta span {
-  text-align: right;
+.breadcrumb ul, .fancynav {
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.breadcrumb-left li {
+  float: left;
+}
+
+.fancynav {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  margin-left: -500px;
+}
+
+.fancynav li {
+  float: left;
+}
+
+.fancynav a {
+  width: 154px;
+}
+
+.breadcrumb a, .fancynav a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 4px 8px 4px 7px;
+  margin-left: 40px;
+  margin-right: -18px;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  line-height: 1.2;
+}
+
+.breadcrumb a::before, .breadcrumb a::after, .fancynav a::before, .fancynav a::after {
+  content: " ";
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-top: -6px;
+}
+
+.breadcrumb-left a::before, .fancynav-left a::before, .fancynav-middle a::before {
+  background-image: url("crumb-left-tip.svg");
+  float: left;
+  margin-left: -35px;
+}
+
+.breadcrumb-left a::after, .fancynav-left a::after {
+  background-image: url("crumb-left-back.svg");
+  float: right;
+  margin-right: -36px;
+}
+
+.breadcrumb-right a::after, .fancynav-right a::after, .fancynav-middle a::after {
+  background-image: url("crumb-right-tip.svg");
+  float: right;
+  margin-right: -36px;
+}
+
+.breadcrumb-right a::before, .fancynav-right a::before {
+  background-image: url("crumb-right-back.svg");
+  float: left;
+  margin-left: -35px;
+}
+
+.postlist ul {
+  padding-left: 30%;
+}
+
+.postlist li {
+  display: block;
+  margin: 1.4em 0;
+}
+
+.postlist-meta {
+  display: inline-block;
+  width: 5em;
+  margin-left: -5em;
+  text-transform: uppercase;
+}
+
+.postlist-link {
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.post-meta > * {
+  margin: 0 1em;
+}
+
+.post-meta a {
+  text-decoration: none;
+  color: #333;
 }
 
 .rss-subscribe {
   display: block;
-  color: black;
+  color: #333;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   font-weight: bold;
+  margin: 2.8em 0;
 }
 
 .social-bar {
@@ -83,14 +259,94 @@ main {
 
 .social-bar li {
   display: inline-block;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 0.3em;
-  border: 2px solid black;
-  margin: 0 1em;
 }
 
 .social-bar a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.3em 0.5em;
+  border: 2px solid #333;
+  margin: 0 1em;
   text-decoration: none;
-  color: black;
+  color: #333;
+}
+
+.duckpool {
+  background-color: #EFF;
+  border: 2px solid #333;
+  border-bottom: none;
+  height: 100%;
+}
+
+.home-nav {
+  height: 10em;
+  margin-top: -10em;
+  border-top: 2px solid #333;
+  background-color: white;
+}
+
+.taglist {
+  text-align: center;
+  padding: 0;
+}
+
+.taglist li {
+  display: inline-block;
+  margin: 1em;
+}
+
+.taglist a {
+  display: inline-block;
+  width: 10em;
+  border: 2px solid #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  padding: 0.5em;
+}
+
+.taglist-name, .taglist-size {
+  display: block;
+}
+
+.taglist-name {
+  font-size: 1.5em;
+}
+
+.listbytag-article {
+  min-height: 1000px;
+}
+
+.listbytag-article .breadcrumb {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.listbytag-article .breadcrumb + header {
+  padding-top: 4em;
+}
+
+.status404 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -50px;
+  width: 60px;
+  margin-top: -40px;
+  text-align: center;
+  font-size: 30px;
+}
+.status404::before {
+  content: "";
+  display: block;
+  background-image: url("duck.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-bottom: 2px solid #333;
+  height: 40px;
+  width: 60px;
 }

@@ -1,33 +1,14 @@
 ---
-layout: default
+layout: page
 ---
-<nav class="breadcrumb">
-  <ul class="breadcrumb-left">
-    <li><a href="{{ "/" | relative_url }}">Home</a></li>
-  </ul>
-</nav>
+<h2>Feel free to contact me right here</h2>
 
-<h1>Contact Me in 3 Easy Steps</h1>
-
-<form method="POST" action="http://formspree.io/{{ site.email }}">
-  <label>
-    <span class="contact-step">1</span>
-    <span class="contact-note">Figure out your email</span>
-    <input type="email" name="email" placeholder="Your email">
-  </label>
-  <label>
-    <span class="contact-step">2</span>
-    <span class="contact-note">Compose your message long or short</span>
-    <textarea name="message" placeholder="Your message"></textarea>
-  </label>
-  <p>
-    <span class="contact-step">3</span>
-    <span class="contact-note">Press ze button!</span>
-    <button type="submit">Send!</button>
-  </p>
+<form class="contactform" method="POST" action="http://formspree.io/{{ site.email }}">
+  <input type="email" name="email" placeholder="Your email">
+  <textarea name="message" placeholder="Your message"></textarea>
+  <button type="submit">Send</button>
   <input type="hidden" name="_next" value="{{ "/thanks/" | relative_url }}">
   <input type="text" name="_gotcha" style="display: none">
-  <p>Note: processing may take up to five working days</p>
 </form>
 
 <h2>Or</h2>

@@ -12,17 +12,38 @@ layout: default
   <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
 
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+      <h1 class="post-title" itemprop="name headline">{{ page.title | smartify | escape }}</h1>
       <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A, %-d %B, %Y" }}</time>
-      {% if page.author %}
-      <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-        <span itemprop="name">
-          {{ page.author }}
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A, %-d %B, %Y" }}</time>
+        {% if page.author %}
+        <span class="post-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">
+            {{ page.author }}
+          </span>
         </span>
-      </span>
-      {% endif %}
+        {% endif %}
+        {% if page.categories.size > 1 %}
+        <span class="post-category">Categories:
+          {% for cat in page.categories %}
+          <a href="{{ "/posts-by-category/" | relative_url }}#{{ cat | sluggify }}">{{ cat }}</a>{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        </span>
+        {% else %}
+        <span class="post-category">One of the <a href="{{ "/posts-by-category/" | relative_url }}#{{ page.categories[0] | sluggify }}">{{ page.categories[0] }}</a></span>
+        {% endif %}
+        {% if page.tags.size > 0 %}
+        <span class="post-tags">
+          Tags:
+          <span itemprop="keywords">
+            {% for tag in page.tags %}
+              <a href="{{ "/posts-by-tag/" | relative_url }}#{{ tag | sluggify }}">{{ tag }}</a>{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          </span>
+        </span>
+        {% endif %}
       </p>
+      {% if page.cover_image %}
+      {% endif %}
     </header>
 
     <div class="post-content" itemprop="articleBody">
