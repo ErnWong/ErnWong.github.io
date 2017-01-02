@@ -25,9 +25,7 @@ taglines:
   - "The blog with a splendiferous name and a one-of-the-kind tagline"
 email: "&#x65;&#x77;&#x6f;&#x6e;&#x35;&#x32;&#x31;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;"
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A blog about making machines, programs, music, maths, physics... and ducks?
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ewon521
