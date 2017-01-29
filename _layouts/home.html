@@ -2,19 +2,15 @@
 layout: default
 ---
 
-<div class="duckpool">
+<div id="duckpool">
 </div>
 
 <header id="home-header">
   <h1>{{ site.title | escape }}</h1>
   <p id="home-tagline">{{ site.taglines.first | escape }}</p>
-  <script>
-    window.siteTaglines = {{ site.taglines | jsonify }};
-  </script>
-  <script src="{{ "/assets/home.js" }}"></script>
 </header>
 
-<nav class="home-nav">
+<nav id="home-nav">
   <ul class="fancynav">
     <li class="fancynav-left"><a href="{% post_url 2016-12-31-duck-duck-goose %}">Why Ducks?</a></li>
     <li class="fancynav-left"><a href="{{ "/about/" | relative_url }}">About</a></li>
@@ -33,3 +29,10 @@ layout: default
   <a class="rss-subscribe" href="{{ "/feed.xml" | relative_url }}">Subscribe via RSS</a>
   {% include social-bar.html %}
 </main>
+
+<script>
+  window.siteBaseurl = '{{ site.baseurl }}';
+  window.sitePosts = {{ site.posts | jsonify }};
+  window.siteTaglines = {{ site.taglines | jsonify }};
+</script>
+<script src="{{ "/assets/home.js" }}"></script>

@@ -131,10 +131,6 @@ main {
   display: block;
 }
 
-.home-nav {
-  overflow: hidden;
-}
-
 .breadcrumb ul, .fancynav {
   padding: 0;
   overflow: hidden;
@@ -272,18 +268,60 @@ main {
   color: #333;
 }
 
-.duckpool {
+#duckpool {
   background-color: #EFF;
   border: 2px solid #333;
   border-bottom: none;
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-.home-nav {
+.duck {
+  display: block;
+  position: absolute;
+  background-image: url('duck.svg');
+  width: 40px;
+  height: 30px;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.duck-left {
+  transform: scaleX(-1);
+}
+
+.duck div {
+  border: 2px solid #333;
+  background-color: white;
+  position: relative;
+  padding: 0.3em 0.8em;
+  top: -30px;
+  left: 40px;
+  right: auto;
+  display: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.duck-left div {
+  left: auto;
+  right: 40px;
+  transform: scaleX(-1);
+}
+
+.duck div.duck-quack {
+  display: inline;
+}
+
+#home-nav {
   height: 10em;
   margin-top: -10em;
   border-top: 2px solid #333;
   background-color: white;
+  position: relative;
+  overflow: hidden;
 }
 
 .taglist {

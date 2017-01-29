@@ -37,19 +37,33 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="686"
-     inkscape:window-height="480"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
      id="namedview5937"
-     showgrid="false"
-     inkscape:zoom="7.2"
-     inkscape:cx="20"
-     inkscape:cy="15"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg5933" />
-  <path
-     d="m 5,25 20,0 0,-20 10,0 0,10 -30,0 z"
-     style="fill:#ffffff;fill-opacity:0;fill-rule:evenodd;stroke:#333333;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path5935" />
+     showgrid="true"
+     inkscape:zoom="14.4"
+     inkscape:cx="13.739428"
+     inkscape:cy="15.06515"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5933">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4141" />
+  </sodipodi:namedview>
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect4143"
+     width="20"
+     height="10"
+     x="5"
+     y="15" />
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect4145"
+     width="10"
+     height="10"
+     x="25"
+     y="5" />
 </svg>
