@@ -1,0 +1,16 @@
+comments:
+  branch: "master"
+  moderation: false
+  format: "yaml"
+  filename: "entry{@timestamp}"
+  path: "_data/comments/{options.slug}"
+  allowedFields: ["name", "email", "url", "message"]
+  requiredFields: ["name", "email", "message"]
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "timestamp-seconds"
+  transforms:
+    email: md5
+  allowedOrigins: ["localhost", "ernwong.github.io"]

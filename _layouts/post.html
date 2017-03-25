@@ -54,10 +54,11 @@ layout: default
     <h2>The End</h2>
     {% include social-bar.html %}
 
-    <h2>Your Turn</h2>
+    <h2>Comments</h2>
+    {% include comments.html %}
 
-    {% if site.disqus.shortname %}
-      {% include disqus_comments.html %}
-    {% endif %}
+    <h2>Your turn</h2>
+    {% include comments-form.html %}
+
   </article>
 </main>
