@@ -1,7 +1,7 @@
 <div class="comments">
   {% capture pagesluggy %}{% include page-slug.html %}{% endcapture %}
   {% if site.data.comments[pagesluggy] %}
-    {% assign commens = site.data.comments[pagesluggy] | sort %}
+    {% assign comments = site.data.comments[pagesluggy] | sort %}
     {% for comment in comments %}
       <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{ comment[1].email }}?d=monsterid&s=100">
       <h3>
