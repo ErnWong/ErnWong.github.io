@@ -1,1 +1,1 @@
-{{ page.path | remove: "_posts/" | replace: "_drafts/","draft-" | remove: ".markdown"}}
+{% capture pageslug %}{{ page.path | remove: "_posts/" | replace: "_drafts/","draft-" | remove: ".markdown"}}{% endcapture %}

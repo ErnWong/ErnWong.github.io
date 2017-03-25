@@ -1,5 +1,6 @@
 <form class="comments-form" method="POST" action="https://api.staticman.net/v2/entry/ErnWong/ErnWong.github.io/master/comments">
-  <input name="options[slug]" type="hidden" value="{% include page-slug.html %}">
+  {% include page-slug.html %}
+  <input name="options[slug]" type="hidden" value="{{ pageslug }}">
   <label>Name: <input name="fields[name]" type="text" required></label>
   <label>Email: <input name="fields[email]" type="email" required></label>
   <label>Optional Website: <input name="fields[url]" type="url"></label>
