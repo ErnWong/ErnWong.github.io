@@ -4,8 +4,8 @@ layout: page
 <h2>Feel free to contact me right here</h2>
 
 <form class="contactform" method="POST" action="https://formspree.io/{{ site.email }}">
-  <input type="email" name="email" placeholder="Your email">
-  <textarea name="message" placeholder="Your message"></textarea>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message" required></textarea>
   <button type="submit">Send</button>
   <input type="hidden" name="_next" value="{{ "/thanks/" | relative_url }}">
   <input type="text" name="_gotcha" style="display: none">
