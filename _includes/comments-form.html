@@ -1,6 +1,7 @@
 <form class="comments-form" method="POST" action="https://api.staticman.net/v2/entry/ErnWong/ErnWong.github.io/master/comments">
   {% include page-slug.html %}
   <input name="options[slug]" type="hidden" value="{{ pageslug }}">
+  <input name="options[redirect]" type="hidden" value="{{ "/comment-posted/" | relative_url }}">
   <label>Name: <input name="fields[name]" type="text" required></label>
   <label>Email: <input name="fields[email]" type="email" required></label>
   <label>Optional Website: <input name="fields[url]" type="url"></label>
