@@ -177,6 +177,62 @@ main > *, .post-content > * {
   box-sizing: border-box;
 }
 
+.comment {
+  display: flex;
+  margin: 4em 0;
+}
+
+.comment-author a, .comment-date {
+  color: #333;
+  text-decoration: none;
+}
+
+.comment-author {
+  margin: 0;
+}
+
+.comment-meta {
+  width: 25%;
+  text-align: right;
+  margin-right: 2em;
+  flex: none;
+}
+
+.comment-bubble {
+  position: relative;
+  border: 2px solid #333;
+  background-color: #fff;
+  width: 50%;
+}
+
+.comment-content {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.comment-bubble::before, .comment-bubble::after {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  top: 12px;
+  right: 100%;
+}
+
+.comment-bubble::before {
+  border-right-color: #333;
+  border-width: 10px;
+}
+
+.comment-bubble::after {
+  border-right-color: #fff;
+  border-width: 8px;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+
 .breadcrumb ul, .fancynav {
   padding: 0;
   overflow: hidden;
