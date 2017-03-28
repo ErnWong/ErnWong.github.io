@@ -27,7 +27,7 @@ email: "&#x65;&#x77;&#x6f;&#x6e;&#x35;&#x32;&#x31;&#x40;&#x67;&#x6d;&#x61;&#x69;
 description: > # this means to ignore newlines until "baseurl:"
   A blog about making machines, programs, music, maths, physics... and ducks?
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ernwong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ewon521
 github_username: ErnWong
 
