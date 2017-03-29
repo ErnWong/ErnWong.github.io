@@ -203,6 +203,7 @@ main > *, .post-content > * {
   border: 2px solid #333;
   background-color: #fff;
   width: 50%;
+  overflow-x: scroll;
 }
 
 .comment-content {
