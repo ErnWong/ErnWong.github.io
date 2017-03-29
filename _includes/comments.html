@@ -17,7 +17,7 @@
         </div>
         <div class="comment-bubble">
           <div class="comment-content">
-            {{ comment[1].message | markdownify }}
+            {{ comment[1].message | replace: '<', '&lt;' | replace: '>', '&gt;' | markdownify }}
           </div>
         </div>
       </article>
