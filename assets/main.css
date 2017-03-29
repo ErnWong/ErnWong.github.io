@@ -203,12 +203,12 @@ main > *, .post-content > * {
   border: 2px solid #333;
   background-color: #fff;
   width: 50%;
-  overflow-x: scroll;
 }
 
 .comment-content {
-  margin-left: 1em;
-  margin-right: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  overflow-x: auto;
 }
 
 .comment-bubble::before, .comment-bubble::after {
