@@ -7,10 +7,10 @@
         <div class="comment-meta">
           <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{ comment[1].email }}?d=monsterid&s=88" width="44" height="44">
           <p class="comment-author">
-            {% if comment[1].url %}
-              <a rel="nofollow" href="{{ comment[1].url }}">{{ comment[1].name }}</a>
+            {% if comment[1].url and comment[1].url != "" and comment[1].url != nil %}
+              <a rel="nofollow" href="{{ comment[1].url | xml_escape }}">{{ comment[1].name | xml_escape }}</a>
             {% else %}
-              {{ comment[1].name }}
+              {{ comment[1].name | xml_escape }}
             {% endif %}
           </p>
           <a class="comment-date" href="#comment-{{ forloop.index }}">{{ comment[1].date | date: "%e %b, %y" }}</a>
