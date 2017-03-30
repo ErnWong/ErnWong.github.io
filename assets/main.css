@@ -234,6 +234,27 @@ main > *, .post-content > * {
   margin-left: 4px;
 }
 
+.comment-content h1 {
+  font-size: 1.17em;
+}
+
+.comment-content h2 {
+  font-size: 1.1em;
+  font-style: normal;
+  text-align: left;
+  text-transform: none;
+  margin: 1em 0;
+  overflow: none;
+}
+
+.comment-content h2::before, .comment-content h2::after {
+  display: none;
+}
+
+.comment-content h3, .comment-content h4, .commment-content h5 {
+  font-size: 1em;
+}
+
 .breadcrumb ul, .fancynav {
   padding: 0;
   overflow: hidden;
