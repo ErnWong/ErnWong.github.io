@@ -16,11 +16,29 @@
           <a class="comment-date" href="#comment-{{ forloop.index }}">{{ comment[1].date | date: "%e %b, %y" }}</a>
         </div>
         <div class="comment-bubble">
-          <div class="comment-content">
-            {{ comment[1].message | replace: '<', '&lt;' | replace: '>', '&gt;' | markdownify }}
-          </div>
+          <div class="comment-content unrendered">{{ comment[1].message | xml_escape }}</div>
         </div>
       </article>
     {% endfor %}
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+    <script type="text/javascript">
+      marked.setOptions({
+        gfm: true,
+        tables: true,
+        breaks: true,
+        sanitize: true,
+        smartypants: true,
+        highlight: function (code) {
+          return hljs.highlightAuto(code).value;
+        }
+      });
+      var elements = document.getElementsByClassName("unrendered");
+      for (var i = 0; i < elements.length; i++) {
+        console.log(elements[i].innerText);
+        elements[i].innerHTML = marked(elements[i].textContent);
+        elements[i].classList.remove('unrendered');
+      }
+    </script>
   {% endif %}
 </div>
