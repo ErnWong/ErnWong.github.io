@@ -1,0 +1,10 @@
+{% include page-slug.html %}
+{% capture svgPath %}files/{{ pageslug }}/{{ include.filename }}{% endcapture %}
+{% if include.caption %}
+<figure>
+{% endif %}
+  {% include {{svgPath}} %}
+{% if include.caption %}
+  <figcaption>{{ include.caption | markdownify }}</figcaption>
+</figure>
+{% endif %}
