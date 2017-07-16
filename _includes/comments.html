@@ -40,5 +40,15 @@
         elements[i].classList.remove('unrendered');
       }
     </script>
+  {% else %}
+      <article class="comment">
+        <div class="comment-meta">
+          <img class="comment-avatar" src="{{ "/assets/duck-dp.png" | relative_url }}" width="44" height="44">
+          <p class="comment-author"><b>Official Duckbot</b></p>
+        </div>
+        <div class="comment-bubble">
+          <div class="comment-content"><p>No comments yet... Be the first!</p></div>
+        </div>
+      </article>
   {% endif %}
 </div>
