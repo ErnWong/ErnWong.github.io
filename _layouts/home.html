@@ -32,7 +32,7 @@ layout: default
 
 <script>
   window.siteBaseurl = '{{ site.baseurl }}';
-  window.sitePosts = {{ site.posts | jsonify }};
+  window.sitePosts = {{ site.posts | jsonify | replace: "</script", "</scr\ipt" }};
   window.siteTaglines = {{ site.taglines | jsonify }};
 </script>
 <script src="{{ "/assets/home.js" }}"></script>
