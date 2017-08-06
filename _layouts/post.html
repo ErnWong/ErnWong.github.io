@@ -29,7 +29,7 @@ layout: default
           {% endfor %}
         </span>
         {% else %}
-        <span class="post-category">One of the <a href="{{ "/posts-by-category/" | relative_url }}#{{ page.categories[0] | sluggify }}">{{ page.categories[0] }}</a></span>
+        <span class="post-category">Category: <a href="{{ "/posts-by-category/" | relative_url }}#{{ page.categories[0] | sluggify }}">{{ page.categories[0] }}</a></span>
         {% endif %}
         {% if page.tags.size > 0 %}
         <span class="post-tags">
