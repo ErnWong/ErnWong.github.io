@@ -1,0 +1,14 @@
+{% include page-slug.html %}
+{% capture videoPath %}{{ site.baseurl }}/files/{{ pageslug }}/{{ include.filename }}{% endcapture %}
+{% if include.caption %}
+<figure>
+{% endif %}
+  <video controls src="{{ videoPath }}"
+       {% if include.width%} width = "{{ include.width }}" {% endif %}
+       {% if include.title %} title = "{{ include.title }}" {% endif %}>
+    This video doesn't play nice with your web browser yet. In the mean time, feel free to download and watch it from <a href="{{ videoPath }}">here</a>.
+  </video>
+{% if include.caption %}
+  <figcaption>{{ include.caption | markdownify }}</figcaption>
+</figure>
+{% endif %}
