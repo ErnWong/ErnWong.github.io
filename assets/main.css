@@ -303,7 +303,7 @@ main > *, .post-content > * {
   margin-right: -18px;
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
-  line-height: 1.2;
+  line-height: 16px;
 }
 
 .breadcrumb a::before, .breadcrumb a::after, .fancynav a::before, .fancynav a::after {
