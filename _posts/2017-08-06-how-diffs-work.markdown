@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How Diffs Work - Mechanical Adding Machines
+title: How Diffs Work – Mechanical Adding Machines
 categories: hobby
 tags: diffs mechanical robotics
 author: Ernest Wong
