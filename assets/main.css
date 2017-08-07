@@ -340,7 +340,7 @@ main > *, .post-content > * {
 
 .postlist li {
   display: block;
-  margin: 1.4em 8em;
+  margin: 5em 8em;
 }
 
 .postlist-meta {
@@ -348,6 +348,20 @@ main > *, .post-content > * {
   width: 5em;
   margin-left: -5em;
   text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  position: relative;
+  top: 55px;
+  left: -20px;
+}
+
+.postlist-meta::before {
+  content: ' ';
+  background-image: url(duck-dp.png);
+  background-size: contain;
+  display: block;
+  height: 44px;
+  width: 44px;
 }
 
 .postlist-link {
@@ -356,6 +370,37 @@ main > *, .post-content > * {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.6em;
+  display: inline-block;
+  border: 2px solid;
+  padding: 0.3em 1em;
+  text-align: center;
+  position: relative;
+}
+
+a.postlist-link::before, a.postlist-link::after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  bottom: 0;
+  right: 100%;
+}
+
+a.postlist-link::before {
+  border-right-color: #333;
+  border-right-width: 32px;
+  border-top-width: 24px;
+  border-bottom-width: 0;
+  margin-bottom: -2px;
+}
+
+a.postlist-link::after {
+  border-right-color: #FFF;
+  border-right-width: 26px;
+  border-top-width: 20px;
+  border-bottom-width: 0;
 }
 
 .post-meta > * {
