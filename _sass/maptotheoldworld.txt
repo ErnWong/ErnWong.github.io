@@ -1,0 +1,95 @@
+html, body
+
+p
+a:hover
+blockquote
+
+figure
+figcaption
+
+video
+
+input, textarea
+button
+button:hover
+label
+label input
+
+.post-header
+.post-content
+
+
+#home-header
+#home-header h1
+#home-tagline
+
+header h1
+h2
+h2:before
+h2:after
+
+main
+main > 8, .post-content > *
+
+.contactform
+.contactform textarea
+.contactform input
+
+.comments-form
+.comments-form textarea
+.comment
+.comment-author a, .comment-date
+.comment-author
+.comment-meta
+.comment-bubble
+.comment-content
+.comment-bubble:before/after
+.comment-content h1
+.comment-content h2
+.comment-content h2:before/after
+.comment-content h3, .comment-content h4, .comment-content h5
+
+.breadcrumb ul, .fancynav
+.breadcrumb-left li
+.fancynav
+.fancynav li
+.fancynav a
+.breadcrumb a, .fancynav a
+.breadcrumb/.fancynav a :before/after
+.breadcrumb-left/right before/after
+
+.postlist li
+.postlist-meta
+.postlist-meta:before
+.postlist-link
+.postlist-link before/after
+
+.post-meta > *
+.post-meta a
+
+.rss-subscribe
+.social-bar
+.social-bar li
+.social-bar a
+
+#duckpool
+.duck
+.duck-left
+.duck div
+.duck-left div
+.duck div.duck-quack
+
+#home-nav
+
+.taglist
+.taglist li
+.taglist a
+.taglist-name, .taglist-size
+.taglist-name
+
+.listbytag-article
+.listbytag-article .breadcrumb
+.listbytag-article .breadcrumb + header
+
+.status404
+.status404:before

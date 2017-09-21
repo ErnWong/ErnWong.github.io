@@ -1,0 +1,6 @@
+main title: 0.3em 1em
+tagline: 0.3em 0.8em (should be 0.6em)
+fancy nav: 4px 8px 4px 7px ~= 0.3em 0.6em
+header h1: 0.3em 1em
+post titles: 0.3em 1em
+buttons (social bar) 0.3em 0.6em (should be 1em)

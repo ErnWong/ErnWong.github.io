@@ -1,0 +1,97 @@
+settings
+========
+
+$color-fg
+$color-bg
+$color-accent
+$stroke-thickness
+
+
+base
+====
+
+html, body
+main?
+reset
+
+
+atoms
+======
+
+fancy-arrows
+boxed-text
+
+
+elements
+========
+
+body-inlines
+headings
+table
+video
+figure (figcaption)
+form
+
+
+molecules
+=========
+
+fancynav
+
+
+organisms
+=========
+
+contact form
+comments form
+comments
+social bar
+
+
+
+
+==========================================
+
+Modified 7-1 Pattern
+====================
+
+settings/
+ - _colors.scss           (fg, bg, accent)
+ - _typography.scss       (primarystack, comicstack, font sizes)
+ - _strokes.scss          (thickness, dashed)
+ - _sizing.scss           (paddings, etc)
+utils/
+ - 
+vendors/
+ - _colorscheme.scss
+atoms/                    (abstract design elements)
+ - _box.scss
+ - _speech-bubble.scss
+ - _arrows.scss
+ - _winged-text.scss
+ - _card.scss
+ - _fancyinput.scss
+base/
+ - _typography.scss
+ - _inlines.scss
+ - _headings.scss
+ - _blocks.scss
+components/
+ - _avatar.scss
+ - _postlist.scss
+ - _taglist.scss
+ - _comments.scss
+ - _comments-form.scss
+ - _social-bar.scss
+layout/
+ - _grid.scss
+ - _navigation.scss
+ - _breadcrumb.scss
+pages/
+ - _home.scss
+ - _post.scss
+ - _contact.scss
+ - _catagories-n-tags.scss
+ - _404.scss
+shame.scss
+main.scss
