@@ -1,0 +1,16 @@
+// 1-settings/_colors.scss
+//
+// Only define colors here.
+// Define colors here only.
+
+
+// Define interesting colors here.
+// Keep them in hsl so they're easy to tune.
+$color-black: hsl(0, 0%, 20%);
+$color-white: hsl(0, 0%, 100%);
+$color-seawater: hsl(180, 100%, 97%);
+
+// Define theme colors for the website.
+$color-fg: $color-black;
+$color-bg: $color-white;
+$color-accent: $color-seawater;

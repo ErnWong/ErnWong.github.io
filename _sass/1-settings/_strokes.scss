@@ -1,0 +1,15 @@
+// 1-settings/_stroke.scss
+//
+// The home for how borders and lines look
+
+
+$stroke-main-style: 'solid';
+$stroke-main-thickness: 2px;
+$stroke-main-color: $color-fg;
+
+$stroke-alt-style: 'dotted';
+$stroke-alt-thickness: $stroke-main-thickness;
+$stroke-alt-color: $stroke-main-color;
+
+$stroke-main: $stroke-main-style $stroke-main-thickness $stroke-main-color;
+$stroke-alt: $stroke-alt-style $stroke-alt-thickness $stroke-alt-color;

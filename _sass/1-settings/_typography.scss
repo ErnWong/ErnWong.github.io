@@ -1,0 +1,47 @@
+// 1-settings/_typography.scss
+//
+// This is a good place for defining font stacks,
+// font sizes, line heights, and so on.
+
+
+// Font stacks.
+$fontstack-primary: ('Helvetica', 'Arial', sans-serif);
+$fontstack-comic: ('Comic Sans MS', 'Comic Sans', cursive, sans-serif);
+$fontstack-monospace: ('Consolas', 'Inconsolata', 'Monaco', 'Courier New', 'Courier', monospace);
+
+// Font sizes.
+$fontsize-small: 12px;
+$fontsize-normal: 14px;
+$fontsize-large: 18px;
+$fontsize-huge: 22px;
+
+$fontsize-secondary-normal: 14px;
+$fontsize-secondary-large: 16px;
+$fontsize-secondary-huge: 18px;
+
+// Line heights.
+$lineheight-normal: 1.4;
+
+
+// Stylings.
+
+@mixin textlike-link {
+  text-decoration: none;
+  color: #333;
+}
+
+@mixin typography-flair-primary {
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-fg;
+}
+
+@mixin typography-flair-secondary {
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-fg;
+}
