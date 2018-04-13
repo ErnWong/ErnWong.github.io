@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Virtual x86 Emulator",
+    "url": "https://copy.sh/v86",
+    "date": "late 2017 to now",
+    "tech": ["JavaScript"],
+    "verb": "contributed",
+    "status": "ongoing",
+    "thumbnail": "v86.png",
+    "description": "A NodeJS and browser-based project, started and maintained by [Fabian Hemmer](https://copy.sh), that emulates x86 hardware.\n\nI implemented the Sound Blaster 16 card, completed the VGA controller, and fixed some PS/2 keyboard and mouse bugs. I plan to complete the sound card emulation, and I'll keep a close eye on the project."
+  },
+  {
+    "name": "A Blog",
+    "url": "https://github.com/ErnWong/ErnWong.github.io",
+    "date": "early 2017 to now",
+    "tech": ["Jekyll", "Staticman"],
+    "verb": "created",
+    "status": "ongoing",
+    "thumbnail": "blog.png",
+    "description": "A website! I thought: a new year, a new school, welp time to throw the MS Frontpage and whatnot out the window and pull something real together. For what purpose? Well, apparently we need to coexist in both the physical realm and the digital realm. I find it a bit difficult to split myself into two and inject one half of my consciousness into a bunch of silicon, so here's a website as a placeholder for my presence instead.\n\nI find that I'm not a fan of using 'prebuilt' themes. Morally, it'll be equivalent to using someone else's hard work. Practically, it will be difficult to extend the theme with consistent quality. Finally, it'd be both fun and nicer if I tried creating my own identity of some sort. Hence, this weird looking, non-responsive website looks the way it does."
+  },
+  {
+    "name": "A Highschool Robotics Team Programmer",
+    "url": "https://github.com/ErnWong/NothingButNet-Mark-III",
+    "date": "2015–2016",
+    "tech": ["C", "Purdue Robotics OS", "libtap"],
+    "verb": "was",
+    "status": "retired",
+    "thumbnail": "vrc.jpg",
+    "description": "I was pretty committed back then but was nonetheless plagued by my over-ambitious attempts at introducing modularity to what should've been a simple program for controlling the robot. As a result, I hogged most of the development time and mechanical failures occurred as often as bugs.\n\nThe programming aspect was interesting as it had to deal with autonomous routines, drive controllers, flywheel regulators, and data loggers. It was the first time dealing with PIDs and control theory, and I must say that the robotics platform really got me excited about engineering, and was the reason why I chose this degree.\n\nI was also the 'team captain' in 2016, but leadership is hard. Our team faced obstacles such as high school exam stress, lack of feeling of success, pessimism, technical inexperience and difficulty, conflicts of interests, all those things just piled on top of each other and the season finished quite crazily, to be honest."
+  },
+  {
+    "name": "Robotics Dashboard – Pigeon Dash",
+    "url": "https://github.com/ErnWong/pigeon-dash",
+    "date": "2015",
+    "tech": ["C", "JavaScript", "Processing", "NodeJS", "Express", "socket.io", "React", "Gulp"],
+    "verb": "created",
+    "status": "completed",
+    "thumbnail": "robotdash.png",
+    "description": "A simple, human-readable communication protocol, a server, and a simple browser app for displaying and controlling subsystems within a Vex EDR robot."
+  },
+  {
+    "name": "nfcycler - Linux Pipe Looper",
+    "url": "https://github.com/ErnWong/nfcycler",
+    "date": "2017",
+    "tech": ["C", "sharness"],
+    "verb": "created",
+    "status": "completed",
+    "description": "A tool (with potentially zero use cases) that executes a given shell command and loops the stdout back into stdin."
+  },
+  {
+    "name": "Virtual Robot Driving Simulator",
+    "url": "https://github.com/ErnWong/sim-clawbot",
+    "date": "2016",
+    "tech": ["C", "JavaScript", "socket.io", "svg.js"],
+    "verb": "created",
+    "status": "completed",
+    "thumbnail": "sim-clawbot.png",
+    "description": "Simulates a simple clawbot to give the team driver opportunity to practice before a real physical robot is built."
+  },
+  {
+    "name": "Raspberry Pi Photogate",
+    "url": "https://github.com/ErnWong/pi-photogate",
+    "date": "2016",
+    "tech": ["C", "JavaScript", "Plotly API", "Raspberry Pi"],
+    "verb": "created",
+    "status": "completed",
+    "description": "A little electronics/raspberry pi project using LEDs as photodiodes that can be used to measure when an object travels past the photogate. It can be used to measure the velocity of an object and the RPM of a spinning object."
+  },
+  {
+    "name": "NZ Olympiad of Informatics Summer Training Camp",
+    "date": "2016",
+    "tech": ["C", "C++"],
+    "verb": "attended",
+    "description": "I had the privilege of attending the 2016 NZOI summer training camp at Victoria University down in Wellington. I met quite a few awesome people there, and they taught us some really nice compsci stuff, all within a pretty short time to be honest. But most importantly, we were fed well by the catering team at Victoria House. Of course, I didn't make it into the training squad (especially how I scored zero points in the final competition), but nevertheless, I had plenty of fun."
+  },
+  {
+    "name": "NZ Informatics Competition",
+    "date": "2015",
+    "tech": ["C"],
+    "verb": "participated",
+    "description": "I had a chance to try out this competition which was held throughout the year. I immediately regretted not knowing it's existence earlier. Kudos to those who run and manage it."
+  },
+  {
+    "name": "Mechanical Adding Linkage",
+    "post": "2017-08-06-how-diffs-work",
+    "date": "2013",
+    "tech": ["Lego"],
+    "verb": "created",
+    "status": "completed",
+    "thumbnail": "adding-linkage.jpg",
+    "description": "The translational position of the output linkage is equal to the sum of the translational positions of the input linkages. Pretty cool? Yup. Useful in real life? Nah."
+  },
+  {
+    "name": "Platform Game Experiment with Variable Jump Height Mechanics",
+    "date": "2011",
+    "tech": ["JavaScript"],
+    "verb": "created",
+    "status": "transcended to an abandoned world",
+    "thumbnail": "jumpingbob.png",
+    "description": "You know when you're playing a platform game, such as Super Mario Bros, you can make small jumps and big jumps. I never thought about the mechanics until I tried making a game, but, how does it actually work? You see, when you try to jump in real life, once you have left the ground you can no longer control how high you want to jump. Turns out there are some pretty neat tricks used in games to create an illusion that the sprite is moving in a parabola with variable height, and make it appear as if the game magically knew how high the parabola needed to be before you jumped. When I found out how other games have solved this problem, I got so excited that I even posted on [gamedev.stackexchange!](https://gamedev.stackexchange.com/a/44766)\n\nMy game itself had some features that I thought was pretty cool at the time. There were sound effects and disgustingly low-quality piano game music that I 'composed'. The art was the best: MS Paint. I even animated the googly eyes! I'm glad those days are over."
+  },
+  {
+    "name": "Mechanical Logic Gates",
+    "date": "2011",
+    "tech": ["Lego"],
+    "verb": "created",
+    "status": "completed",
+    "description": "I was always fascinated by digital technology. I remember borrowing this book called 'Practical Electronics for Inventors' by Paul Scherz, even though I didn't understand half of it. The bit that I did find particularly interesting was the chapter on digital electronics. Computers seem to make much more sense ever since reading that chapter.\n\nI was inspired by a person called [Randomwraith](https://www.randomwraith.com/logic.html) to attempt modelling functional logic gates using lego. His creations were fascinating. My ones, err, barely worked. But nonetheless, it taught me some interesting things, especially something that was later formally taught as De Morgan equivalents."
+  },
+  {
+    "name": "Simple Physics Simulations",
+    "date": "2011",
+    "tech": ["C#", "JavaScript"],
+    "verb": "created",
+    "status": "completed",
+    "thumbnail": "physics.png",
+    "description": "When I was young, I was overly ambitious in attempting to simulate the world with physics. Ah, the grand dream. Unquestionably my attempts completely missed the point. Especially so when it was used for my year 8 science fair (which, by the way, took me years until I figured out what science fair was really about since my ego was tragically way too high to notice it)."
+  },
+  {
+    "name": "Simple Phone Plan Chooser",
+    "date": "2011",
+    "tech": ["C#"],
+    "verb": "created",
+    "status": "completed",
+    "description": "This was nothing more than a maths homework with some GUI over a table, and a simple piece of code that loops over each row, calculates the expected costs, and displays the row with the minimal cost. I'm surprised how inefficient I made it."
+  },
+  {
+    "name": "Mouse Controlled Platform Game – ‘Banana Attack’",
+    "date": "2010",
+    "tech": ["ActionScript", "Adobe Flash"],
+    "verb": "created",
+    "status": "completed",
+    "thumbnail": "banana-attack.png",
+    "description": "It could've been worse."
+  }
+]

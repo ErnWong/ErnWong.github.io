@@ -1,0 +1,67 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<div class="projectlist">
+  {% for project in site.data.projects %}
+    <section class="project">
+
+      {% if project.thumbnail %}
+      <div class="project-thumbnail">
+        {% capture thumbnail_path %}/files/project-pictures/{{ project.thumbnail }}{% endcapture %}
+        <img src="{{ thumbnail_path | relative_url }}" />
+      </div>
+      {% endif %}
+
+      <p class="project-intro">In <span class="project-date">{{ project.date }}</span>, I <span class="project-verb">{{ project.verb }}</span>…</p>
+
+      {% if project.url %}
+      <a class="project-name-link" href={{ project.url }}>
+      {% endif %}
+      <h3 class="project-name">{{ project.name }}</h3>
+      {% if project.url %}
+      </a>
+      {% endif %}
+
+      <div class="project-meta">
+        {% if project.tech %}
+        <p class="project-techs">
+          <span class="project-meta-label">Tech:</span> {% for tech in project.tech %}<span>{{ tech }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </p>
+        {% endif %}
+
+        {% if project.status %}
+          <p class="project-status"><span class="project-meta-label">Status:</span> <span>{{ project.status }}</span></p>
+        {% endif %}
+      </div>
+
+      <div class="project-description">
+        {{ project.description | markdownify }}
+      </div>
+
+      {% if project.url or project.post %}
+      <div class="project-links">
+        {% if project.url %}
+          <a class="project-url" href={{ project.url }}>Visit Project</a>
+        {% endif %}
+        {% if project.post %}
+          {% assign post_path = project.post | prepend:"_posts/" | append:".markdown" %}
+          {% assign posts = site.posts | where:"path",post_path %}
+          {% if posts.size == 0 %}
+          <p>I wanted to show you a related blog post, but if you're seeing this message, then that means I've mistyped the post name and Jekyll could not find it. Rip :(</p>
+          {% else %}
+          <a class="project-post" href="{{ posts[0].url | relative_url }}">Related Blog Post</a>
+          {% endif %}
+        {% endif %}
+      </div>
+      {% endif %}
+
+    </section>
+  {% endfor %}
+</div>
+
+<h2>The End</h2>
+
+{% include social-bar.html %}
