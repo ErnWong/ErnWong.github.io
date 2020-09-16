@@ -1,10 +1,14 @@
-<form class="comments-form" method="POST" action="https://api.staticman.net/v2/entry/ErnWong/ErnWong.github.io/master/comments">
+<form class="comments-form" id="comments-form" method="POST" action="https://api.staticman.net/v2/entry/ErnWong/ErnWong.github.io/master/comments">
   {% include page-slug.html %}
   <input name="options[slug]" type="hidden" value="{{ pageslug }}">
   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ "/comment-posted/" | relative_url }}">
+  <input name="options[reCaptcha][siteKey]" type="hidden" value="6LektcwZAAAAADC288y1eQKGI8YKJZjQI61KgSS5">
+  <input name="options[reCaptcha][secret]" type="hidden" value="yxsVR+o4xUp2wA+sJGq2ZHbxNtNPUdaOgkZ+cOCNXRhi+zvdKInkCq8dam4zvedj8OZVWMM3W0coL/HUR1PKBOCQO1AAPOQGN6PJJqMtFTxqYHmwiBsUd7j5fYHUc96Zg2uwMKOfokEXs9SLMxTd0BdSfywBaEg7ot2zfqua49o=">
   <label>Name: <input name="fields[name]" type="text" required></label>
   <label>Email: <input name="fields[email]" type="email" required></label>
   <label>Optional Website: <input name="fields[url]" type="url"></label>
   <textarea name="fields[message]" placeholder="Craft your comment here" required></textarea>
+  <div class="g-recaptcha" data-sitekey="6LektcwZAAAAADC288y1eQKGI8YKJZjQI61KgSS5"></div>
   <button type="submit">Send</button>
 </form>
+<script src="https://www.google.com/recaptcha/api.js"></script>

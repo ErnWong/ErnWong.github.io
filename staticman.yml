@@ -14,3 +14,7 @@ comments:
   transforms:
     email: md5
   allowedOrigins: ["localhost", "ernwong.github.io"]
+  reCaptcha:
+    enabled: true
+    siteKey: "6LektcwZAAAAADC288y1eQKGI8YKJZjQI61KgSS5"
+    secret: "yxsVR+o4xUp2wA+sJGq2ZHbxNtNPUdaOgkZ+cOCNXRhi+zvdKInkCq8dam4zvedj8OZVWMM3W0coL/HUR1PKBOCQO1AAPOQGN6PJJqMtFTxqYHmwiBsUd7j5fYHUc96Zg2uwMKOfokEXs9SLMxTd0BdSfywBaEg7ot2zfqua49o="

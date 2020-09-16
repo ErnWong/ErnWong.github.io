@@ -186,6 +186,12 @@ main > *, .post-content > * {
   box-sizing: border-box;
 }
 
+.comments-form .g-recaptcha {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 1.4em;
+}
+
 .comment {
   display: flex;
   margin: 4em 0;
