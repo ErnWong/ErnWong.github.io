@@ -14,7 +14,14 @@ comments:
   transforms:
     email: md5
   allowedOrigins: ["localhost", "ernwong.github.io"]
+  akismet:
+    enabled: true
+    author: "{fields.name}"
+    authorEmail: "{fields.email}"
+    authorUrl: "{fields.url}"
+    content: "{fields.message}"
+    type: "comment"
   reCaptcha:
     enabled: true
-    siteKey: "6LektcwZAAAAADC288y1eQKGI8YKJZjQI61KgSS5"
-    secret: "yxsVR+o4xUp2wA+sJGq2ZHbxNtNPUdaOgkZ+cOCNXRhi+zvdKInkCq8dam4zvedj8OZVWMM3W0coL/HUR1PKBOCQO1AAPOQGN6PJJqMtFTxqYHmwiBsUd7j5fYHUc96Zg2uwMKOfokEXs9SLMxTd0BdSfywBaEg7ot2zfqua49o="
+    siteKey: "6LdN0MwZAAAAAPGuSkl71LZ46-X7zQ3f2SUKZrLq"
+    secret: "Uk6/Rs26ugnNBjVkGreBYG5DeA/0WOz6gd7Hd+OOSC2o7zovLORdiZDv8qwvyWnUrgDt8fiCL62ta65RnrxThDuTearQjtXSR78Jl+vXJQl9N1oyoXFKnWphlARsm5Luz2VQn6alBygz6LiGR/y3qKMF0AMwbCGTR1zZjYSOtpvIyi5EG8wi/Jh4gGjv6yS1yXtwnxPsDPo3t51S92IqKP3wkKkzF431Ezvye8+2hUDeXOs+ZOBiezv0D9SNLScephpX/Jb8G0H9VfWY1XIETT4jkkITS0xtKKzxVgKnLGPxck8pvj1hBmIqZMDsyYCJ1FVMCp2w5zipbOH9ekGkUg=="

@@ -1,14 +1,14 @@
-<form class="comments-form" id="comments-form" method="POST" action="https://api.staticman.net/v2/entry/ErnWong/ErnWong.github.io/master/comments">
+<form class="comments-form" id="comments-form" method="POST" action="https://ernestwongnz-comments.herokuapp.com/v2/entry/ErnWong/ErnWong.github.io/master/comments">
   {% include page-slug.html %}
   <input name="options[slug]" type="hidden" value="{{ pageslug }}">
   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ "/comment-posted/" | relative_url }}">
-  <input name="options[reCaptcha][siteKey]" type="hidden" value="6LektcwZAAAAADC288y1eQKGI8YKJZjQI61KgSS5">
-  <input name="options[reCaptcha][secret]" type="hidden" value="yxsVR+o4xUp2wA+sJGq2ZHbxNtNPUdaOgkZ+cOCNXRhi+zvdKInkCq8dam4zvedj8OZVWMM3W0coL/HUR1PKBOCQO1AAPOQGN6PJJqMtFTxqYHmwiBsUd7j5fYHUc96Zg2uwMKOfokEXs9SLMxTd0BdSfywBaEg7ot2zfqua49o=">
+  <input name="options[reCaptcha][siteKey]" type="hidden" value="6LdN0MwZAAAAAPGuSkl71LZ46-X7zQ3f2SUKZrLq">
+  <input name="options[reCaptcha][secret]" type="hidden" value="Uk6/Rs26ugnNBjVkGreBYG5DeA/0WOz6gd7Hd+OOSC2o7zovLORdiZDv8qwvyWnUrgDt8fiCL62ta65RnrxThDuTearQjtXSR78Jl+vXJQl9N1oyoXFKnWphlARsm5Luz2VQn6alBygz6LiGR/y3qKMF0AMwbCGTR1zZjYSOtpvIyi5EG8wi/Jh4gGjv6yS1yXtwnxPsDPo3t51S92IqKP3wkKkzF431Ezvye8+2hUDeXOs+ZOBiezv0D9SNLScephpX/Jb8G0H9VfWY1XIETT4jkkITS0xtKKzxVgKnLGPxck8pvj1hBmIqZMDsyYCJ1FVMCp2w5zipbOH9ekGkUg==">
   <label>Name: <input name="fields[name]" type="text" required></label>
   <label>Email: <input name="fields[email]" type="email" required></label>
   <label>Optional Website: <input name="fields[url]" type="url"></label>
   <textarea name="fields[message]" placeholder="Craft your comment here" required></textarea>
-  <div class="g-recaptcha" data-sitekey="6LektcwZAAAAADC288y1eQKGI8YKJZjQI61KgSS5"></div>
+  <div class="g-recaptcha" data-sitekey="6LdN0MwZAAAAAPGuSkl71LZ46-X7zQ3f2SUKZrLq"></div>
   <button type="submit">Send</button>
 </form>
 <script src="https://www.google.com/recaptcha/api.js"></script>
