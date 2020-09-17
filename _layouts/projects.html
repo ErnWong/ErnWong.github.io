@@ -55,6 +55,9 @@ layout: page
           <a class="project-post" href="{{ posts[0].url | relative_url }}">Related Blog Post</a>
           {% endif %}
         {% endif %}
+        {% if project.demo %}
+          <a class="project-url" href={{ project.demo }}>Visit Demo</a>
+        {% endif %}
       </div>
       {% endif %}
 

@@ -1,5 +1,45 @@
 [
   {
+    "name": "User Space In-Memory File System",
+    "url": "https://github.com/ErnWong/se370-memoryfs",
+    "date": "2019",
+    "tech": ["C"],
+    "verb": "wrote",
+    "status": "completed",
+    "description": "This was a simple file system implementation using FUSE, submitted for a third-year operating systems course."
+  },
+  {
+    "name": "Terratopia",
+    "url": "https://github.com/saddboys/Softeng306Assignment2",
+    "demo": "http://ernestwong.nz/terratopia/",
+    "date": "2019",
+    "tech": ["C#", "Unity"],
+    "verb": "collaborated on",
+    "status": "completed",
+    "thumbnail": "terratopia.png",
+    "description": "For our third-year software design course, a team of 7 of us built a Unity city-building game to help build awareness about climate change and the tradeoffs that need to be made in a demanding world. In addition to contributing to the game logic, I also helped out with the sound effects and the simple background soundtrack."
+  },
+  {
+    "name": "NameSayer",
+    "url": "https://github.com/harmanlamba/NameSayerGUI",
+    "date": "2018",
+    "tech": ["Java", "JavaFX", "ffmpeg"],
+    "verb": "co-created",
+    "status": "completed",
+    "thumbnail": "namesayer-gui.png",
+    "description": "For our second-year software design course, Harman and I co-created a desktop application that helps people pronounce names."
+  },
+  {
+    "name": "NameSayer - Terminal Version",
+    "url": "https://gist.github.com/ErnWong/3371b8cfd0940d907715ed5c6156459d",
+    "date": "2017",
+    "tech": ["bash", "ffmpeg", "tput"],
+    "verb": "wrote",
+    "status": "completed",
+    "thumbnail": "namesayer-terminal.gif",
+    "description": "This is an early terminal-based prototype for the NameSayer project for our second-year software design course. I incorperated a bit of ncurses tput into my script to provide a text-based user interface."
+  },
+  {
     "name": "Virtual x86 Emulator",
     "url": "https://copy.sh/v86",
     "date": "late 2017 to now",
@@ -8,6 +48,16 @@
     "status": "ongoing",
     "thumbnail": "v86.png",
     "description": "A NodeJS and browser-based project, started and maintained by [Fabian Hemmer](https://copy.sh), that emulates x86 hardware.\n\nI implemented the Sound Blaster 16 card, completed the VGA controller, and fixed some PS/2 keyboard and mouse bugs. I plan to complete the sound card emulation, and I'll keep a close eye on the project."
+  },
+  {
+    "name": "Metronome CAD Model",
+    "url": "https://drive.google.com/file/d/0B72MM6AmH2NaS1hGTTNTMmhFU1U/view?usp=sharing",
+    "date": "2017",
+    "tech": ["PTC Creo"],
+    "verb": "created",
+    "status": "completed",
+    "thumbnail": "metronome.jpg",
+    "description": "We had a CAD competition for one of our first-year engineering design courses. Unfortunately, I have no idea what the results of that competition was."
   },
   {
     "name": "A Blog",
