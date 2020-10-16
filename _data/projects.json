@@ -1,5 +1,15 @@
 [
   {
+    "name": "aotearoavoices.nz",
+    "url": "https://aotearoavoices.nz",
+    "date": "2020",
+    "tech": ["NodeJS", "React", "bash", "docker"],
+    "verb": "collaborated on",
+    "status": "completed",
+    "thumbnail": "aotearoavoices.png",
+    "description": "As part of a fourth-year agile software development course, a team of 8 of us developed an online platform within 3 development sprints to give public access to some Maori and New Zealand text-to-speech systems that Dr. Catherine Watson and her colleagues have been working on internally. Dr. Catherine Watson was our client for this project. I primarily contributed on the initial UI mockups (in collaboration with [Brian](https://github.com/Sabatr)), setting up the docker configuration files, and testing various backend components."
+  },
+  {
     "name": "User Space In-Memory File System",
     "url": "https://github.com/ErnWong/se370-memoryfs",
     "date": "2019",
