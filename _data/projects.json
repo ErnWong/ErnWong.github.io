@@ -1,5 +1,15 @@
 [
   {
+    "name": "High-level Game Networking Library – CrystalOrb",
+    "url": "https://github.com/ErnWong/crystalorb",
+    "date": "2021 to now",
+    "tech": ["Rust"],
+    "verb": "created",
+    "status": "maintaining",
+    "thumbnail": "crystalorb.apng",
+    "description": "I wanted to add real-time physics multiplayer support to an audio-visual experiment that I started making earlier to learn the [Rust](https://www.rust-lang.org) programming language. It turned out to be a great opportunity to learn about Rust API conventions, open-source library maintenance, and some game networking concepts."
+  },
+  {
     "name": "aotearoavoices.nz",
     "url": "https://aotearoavoices.nz",
     "date": "2020",
